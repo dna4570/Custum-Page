@@ -2,6 +2,14 @@
 /*--------------------------
 全体スタイル
 -----------------------*/
+PC-only {
+
+}
+
+SP-only {
+
+}
+
 body{
 padding: 0;
 margin:0;
@@ -10,21 +18,26 @@ box-sizing:border-box;
 }
 
 h1{
-    font-size:21px;
-    font-family:suns-selif;
+  font-size:21px;
+  font-family:suns-selif;
 }
 
 h2{
-    font-size:18px;
+  font-size:18px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-family: 'Hiragino Mincho Pro';
 }
 
 p{
-    margin-top:0;
-    margin-bottom:0;
+  margin-top:0;
+  margin-bottom:0;
 }
 
 img{
-    vertical-align:bottom;
+  vertical-align:bottom;
 }
 
 /*--------------------------
@@ -129,7 +142,7 @@ img{
 
 /*--------------------------
 .section_a
------------------------*/
+----------------------------*/
 .section_a{
   width:100%;
   max-width:1300px;
@@ -145,6 +158,7 @@ img{
   background-attachment:fixed;
   text-align:left;
   display:flex;
+  height:500px;
 }
 
 .section_a__r-column{
@@ -153,6 +167,8 @@ img{
   background-position:center center;
   background-attachment:fixed;
   text-align:right;
+  margin-top:60px;
+  margin-right:60px;
 }
 
 .section_a__r-column__img{
@@ -270,15 +286,17 @@ img{
   height:auto;
 }
 
-.section_d__inner h2{
+.section_d__inner h1{
   color:#fff;
   text-align:center;
   padding:2rem;
+  font-size:60px;
 }
 
 .section_d__inner p{
   color:#fff;
   text-align:center;
+  width:95px;
 }
 
 .section_d__inner__flex{
@@ -315,10 +333,6 @@ img{
   height:200px;
 }
 
-.section_d-card__l-column{
-
-}
-
 .section_d-card__l-column img{
   width:200px;
   height:200px
@@ -341,19 +355,19 @@ button:a{
 .section_d__btn{
   color:black;
   margin:5px 30px 5px 30px;
-      margin-top: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        background-color: #ffa200;
-        color: #fff;
-        padding: 10px 70px;
-        font-style: bold;
-        border: 0px solid #000;
-        bottom: 10%;
-        text-decoration-line: none !important;
-        width: 260px;
-        margin: 0 auto;
-        filter: drop-shadow(0 1mm 1mm rgb(128, 128, 128));
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #ffa200;
+  color: #fff;
+  padding: 10px 70px;
+  font-style: bold;
+  border: 0px solid #000;
+  bottom: 10%;
+  text-decoration-line: none !important;
+  width: 260px;
+  margin: 0 auto;
+  filter: drop-shadow(0 1mm 1mm rgb(128, 128, 128));
 }
 
 .button__area{
@@ -361,14 +375,21 @@ button:a{
   padding-bottom:50px;
 }
 
+.section_d__inner__text{
+  text-align:center;
+  display:block;
+  margin:0 auto;
+  max-width:500px;
+}
+
 /*--------------------------
-.section_e
+.section_e お知らせ
 -----------------------*/
 .section_e{
   width:100%;
   max-width:1300px;
   margin:0 auto;
-    /* display:block; */
+  /* display:block; */
   text-align:center;
 }
 
@@ -417,25 +438,111 @@ button:a{
   height:300px;
   /* display:inline-block; */
 }
-
-.STUDIO-PAGE__btn{
-  background-color:#367d55;
-  color:#fff;
-  border-radius:20px;
+.container a{
+  display:block;
   width:200px;
-      margin-top: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        background-color: #ffa200;
-        color: #fff;
-        padding: 10px 70px;
-        font-style: bold;
-        border: 0px solid #000;
-        bottom: 10%;
-        text-decoration-line: none !important;
-        width: 260px;
-        margin: 0 auto;
-        filter: drop-shadow(0 1mm 1mm rgb(128, 128, 128));
+  height:50px;
+  cursor:pointer;
+}
+
+.button{
+  /* background-color:#367d55; */
+  color:#fff;
+  /* border-radius:20px; */
+  /* width:200px; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* border-radius: 10px; */
+  background-color: #333;
+  /* color: #fff; */
+  /* padding: 10px 70px; */
+  font-style: bold;
+  border: 0px solid #000;
+  bottom: 10%;
+  /* text-decoration-line: none !important; */
+  /* width: 260px; */
+  display:block;
+  width:100%;
+  height:100%;
+  padding:8px 16px;
+  position:relative;
+  margin: 0 auto;
+  filter: drop-shadow(0 1mm 1mm rgb(128, 128, 128));
+}
+
+button::before,
+button::after{
+  content:"";
+  position:absolute;
+  width:0;
+  height:0;
+  border:2px solid transparent;
+  transition:all 0.5s ease-in-out;
+}
+button::before{
+  top:0;
+  left:0;
+  border-top-color:#fff;
+  border-left-color:#fff;
+}
+
+button::after{
+  bottom:0;
+  right:0;
+  border-bottom-color:#fff;
+  border-right-color:#fff;
+}
+button:hover::before,
+button:hover::after{
+  width:calc(100% - 4px);
+  height:calc(100% -4px);
+}
+/*--------------------------
+.section_tab
+--------------------------*/
+.section_tab{
+  max-width:1200px;
+  width:800px;
+  text-align:center;
+  margin:0 auto;
+  display:block;
+}
+
+.menu {
+	display: flex;
+	gap: 3px;
+	margin: 0;
+	padding: 0;
+}
+
+.item {
+	flex: 0 0 140px;
+	list-style: none;
+	text-align: center;
+	background: #d9d9d9;
+	padding: 7px 5px 3px;
+	border-radius: 5px 5px 0 0;
+}
+
+.item.active {
+	background: pink;
+}
+
+.item:hover {
+	cursor: pointer;
+}
+
+.container {
+	border: 2px solid pink;
+	padding: 20px;
+}
+
+.content {
+	display: none;
+}
+
+.content.show {
+	display: block;
 }
 
 /*--------------------------
@@ -457,307 +564,393 @@ button:a{
 .section_f_2 グリッド
 -----------------------*/
 .section_f_2{
-    width:100%;
-    max-width:1300px;
-    margin:0 auto;
-    display:block;
+  width:100%;
+  max-width:1300px;
+  margin:0 auto;
+  display:block;
 }
 
 .section_f_2__inner{
-    background-color:lightgray;
-    margin:0 auto;
+  background-color:lightgray;
+  margin:0 auto;
 }
 
 .container{
-    display:grid;
-    width:600px;
-    height:300px;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows:1fr 1fr 1fr;
-    gap:10px 30px ;
-    margin:0 auto;
+  display:grid;
+  width:600px;
+  height:300px;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr;
+  gap:10px 30px ;
+  margin:0 auto;
 }
 
 .item1, .item2, .item3, item4, item5, item6{
-    border:1px black solid;
+  border:1px black solid;
 }
 
 .item1 {
-    grid-row:1;
-    grid-column:1/3;
-    background-image:url("./images/_S8A5255.jpg")
+  grid-row:1;
+  grid-column:1/3;
+  background-image:url("./images/_S8A5255.jpg")
 }
 
 .item2{
-    grid-row:1;
-    grid-column:3;
+  grid-row:1;
+  grid-column:3;
 }
 
 .item3 {
-    grid-row:2 / 4;
-    grid-column:3;
+  grid-row:2 / 4;
+  grid-column:3;
 }
 
 .item4{
-    grid-row:3;
-    grid-column:1 / 3;
+  grid-row:3;
+  grid-column:1 / 3;
 }
 
 .item5 {
-    grid-row:2;
-    grid-column:1;
+  grid-row:2;
+  grid-column:1;
 }
 
 .item6{
-    grid-row:2;
-    grid-column:2;
+  grid-row:2;
+  grid-column:2;
 }
 
 #gi1{
-    background-color:aqua;
+  background-color:aqua;
 }
 #gi2{
-    background-color:seashell;
+  background-color:seashell;
 }
 #gi3{
-    background-color:darkkhaki;
+  background-color:darkkhaki;
 }
 #gi4{
-    background-color:aquamarine;
+  background-color:aquamarine;
 }
 #gi5{
-    background-color:pink;
+  background-color:pink;
 
 }
 #gi6{
-    background-color:yellow;
+  background-color:yellow;
 }
 #gi7{
-    background-color:orange;
+  background-color:orange;
 }
 #gi8{
-    background-color:gray;
+  background-color:gray;
 }
 
 /*--------------------------
 .section_g
 -----------------------*/
 .section_g{
-    width:100%;
-    background-color:#fff;
+  width:100%;
+  background-color:#fff;
 }
 
 .section_g__inner{
-    background-color:lightgray;
-    max-width:1300px;
-    margin:0 auto;
-    text-align:left;
+  background-color:lightgray;
+  max-width:1300px;
+  margin:0 auto;
+  text-align:left;
 }
 
 .text-column__access{
-    /* width:100%; */
-    max-width:700px;
-    /* margin:0 auto; */
-    /* text-align:left; */
-    /* display:block; */
-    width:100%;
-    margin:0 auto;
-    text-align:left;
+  /* width:100%; */
+  max-width:700px;
+  /* margin:0 auto; */
+  /* text-align:left; */
+  /* display:block; */
+  width:100%;
+  margin:0 auto;
+  text-align:left;
 }
 
 .section_g__inner h2{
-    font-size:20px;
+  font-size:20px;
 }
 
 .section_g__inner p{
-    font-size:10px;
+  font-size:10px;
 }
 
 /*--------------------------
 .section_h
 -----------------------*/
 .section_h{
-    width:100%;
-    max-width:1300px;
-    height:auto;
-    background-color:lightgray;
-    margin:0 auto;
+  width:100%;
+  max-width:1300px;
+  height:auto;
+  background-color:lightgray;
+  margin:0 auto;
 }
 
 .section_h__inner{
-    height:auto;
+  height:auto;
 }
 
 .access_map{
-    width:700px;
-    height:300px;
-    background-color:lightblue;
-    margin:0 auto;
+  width:700px;
+  height:300px;
+  background-color:lightblue;
+  margin:0 auto;
 }
 
 /* Google Mapを囲う要素 */
 .map {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-top: 75%; /* 比率を4:3に固定 */
-  }
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 75%; /* 比率を4:3に固定 */
+}
 
-  /* Google Mapのiframe */
-  .map iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+/* Google Mapのiframe */
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*------------------------
+section_j_plus コンタクト
+--------------------------*/
+.section_j_plus {
+  background-color: #fff;
+  height: 100px;
+  width: 100%;
+}
+
+.section_j_plus__inner {
+  background-color: #fff;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.section_j_plus__inner h2 {
+  font-size: 30px;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*--------------------------
+section_j
+お問い合わせフォーム コンタクトフォーム
+--------------------------*/
+.section_j{
+  max-width:800px;
+  width:100%;
+  margin:0 auto;
+  text-align:center;
+}
+
+table{
+	width:100%;
+	margin:20px auto 20px auto;
+	border-collapse:collapse;
+}
+
+th,td{
+	padding:10px 15px;
+	border:1px solid #999;
+	font-weight:normal;
+	text-align:left;
+}
+
+th{
+	background:#eee;
+	position:relative;
+	width:30%;
+}
+
+td{
+	background:#fff;
+}
+
+input{
+	padding:5px;
+}
+
+textarea{
+	padding:5px;
+	width:90%;
+}
+
+th span{
+	font-size:12px;
+	background:#f40;
+	color:#fff; padding:0 3px;
+	border-radius:3px;
+	position:absolute;
+	right:15px;
+}
+
+.submit-button{ text-align:center;}
+button{
+	background:#09e;
+	border:0; border-radius:5px;
+	padding:15px 50px;
+	color:#fff;
+	font-size:18px;
+	transition:.3s;
+}
+
+button:hover{
+	cursor:pointer;
+	background:#18c;
+}
+
+.err{
+	background:#c00;
+	color:#fff;
+	padding:5px 15px;
+	display:none;
+}
+
+#end{
+	padding:5%;
+	text-align:center;
+	display:none;
+}
+
+#end h1{
+	color:#09e;
+}
+#end div{
+	border:1px solid #ccc;
+	background:#fff;
+	padding:5% 0;
+}
 
 
 
 /*--------------------------
-.section_i Access
+.section_i CONTACTコンタクト
 -----------------------*/
 .section_i {
-    width: 100%;
-    /* max-width:1300px; */
-    background-color: #fff;
+  width: 100%;
+  /* max-width:1300px; */
+  background-color: #fff;
 }
 
 .section_i__inner {
-    background-color: #fff;
-    max-width: 1300px;
-    margin: 0 auto;
-    text-align: left;
+  background-color: #fff;
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .section_i h3 {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    font-family: "Poppins";
-    font-weight: 50;
-    font-size: 30px;
-    text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-family: "Poppins";
+  font-weight: 50;
+  font-size: 30px;
+  text-align: center;
 }
 
 .text-column {
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: left;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
 }
-
-/*--------------------------
-.section_i_plus 地図
------------------------*/
-/* .section_i_plus{
-	width:100%;
+/*-------------------------
+section_comntact
+---------------------------*/
+.section_contact{
+  width:100%;
 }
+.section_contact__inner{
+  max-width:1200px;
+  margin:0 auto;
+  text-align:center;
 
-.section_i_plus__inner{
-	max-width:1080px;
-	margin:0 auto;
-	height:auto;
 }
+/*-------------------------
 
-
-.access_map{
-	margin:0 auto;
-	height:auto;
-	width: auto;
-}
-
-.access_map iframe{
-	margin:0 auto;
-	text-align:center;
-	display:block;
-}
-
-.map {
-	position: relative;
-	width: 100%;
-	height: 0;
-	padding-top: 75%;
-}
-
-
-.map iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-} */
-/* クラスが"section_i_plus"のセクションに対して */
+---------------------------*/
 .section_i_plus {
     width: 100%;
 }
 
 /* クラスが"section_i_plus__inner"のdivに対して */
 .section_i_plus__inner {
-    max-width: 1080px;
-    margin: 0 auto;
-    height: auto;
+  max-width: 1080px;
+  margin: 0 auto;
+  height: auto;
 }
 
 /* クラスが"access_map"のdivに対して */
 .access_map {
-    margin: 0 auto;
-    height: auto;
-    width: auto;
+  margin: 0 auto;
+  height: auto;
+  width: auto;
 }
 
 /* クラスが"access_map"の中のiframeに対して */
 .access_map iframe {
-    margin: 0 auto;
-    text-align: center;
-    display: block;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
 }
 
 /* Google Mapを囲む要素 */
 .map {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-top: 75%;
-    /* 比率を4:3に固定 */
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 75%;
+  /* 比率を4:3に固定 */
 }
 
 /* Google Mapのiframe */
 .map iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 /*--------------------------
 .section_i
 -----------------------*/
 .section_i{
-    width:100%;
-    /* max-width:1300px; */
-    background-color:#fff;
+  width:100%;
+  /* max-width:1300px; */
+  background-color:#fff;
 }
 
 .section_i__inner{
-    background-color:lightgray;
-    max-width:1300px;
-    margin:0 auto;
-    text-align:left;
+  background-color:lightgray;
+  max-width:1300px;
+  margin:0 auto;
+  text-align:left;
 }
 
 .text-column{
-    width:100%;
-    max-width:700px;
-    margin:0 auto;
-    text-align:left;
+  width:100%;
+  max-width:700px;
+  margin:0 auto;
+  text-align:left;
 }
 
 .section_i__inner h2{
-    font-size:20px;
+  font-size:20px;
 }
 .section_i__inner p{
-    font-size:10px;
+  font-size:10px;
 }
 
 /*--------------------------
@@ -765,25 +958,25 @@ button:a{
 -----------------------*/
 
 .section_j{
-    width:100%;
-    max-width:1300px;
-    height:auto;
-    margin:0 auto;
-    background-repeat:no-repeat;
-    background-position:center center;
-    background-size:cover;
+  width:100%;
+  max-width:1300px;
+  height:auto;
+  margin:0 auto;
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:cover;
 }
 
 .section_j__inner{
-    background-color:#1e3450;
-    height:300px;
-    margin: 0 auto;
-    display:block;
-    text-align:center;
+  background-color:#1e3450;
+  height:300px;
+  margin: 0 auto;
+  display:block;
+  text-align:center;
 }
 .section_j__inner img{
-    width:700px;
-    height:300px;
+  width:700px;
+  height:300px;
 }
 
 /*--------------------------
@@ -810,20 +1003,20 @@ button:a{
 }
 
 .section_k-inner__r-column{
-    /* display:inline-block; */
-    margin-left:300px;
-    /* text-align:center; */
-    margin:0 auto;
-    font-size:10px;
-    margin:0 auto;
+  /* display:inline-block; */
+  margin-left:300px;
+  /* text-align:center; */
+  margin:0 auto;
+  font-size:10px;
+  margin:0 auto;
 }
 
 .section_k-inner__l-column{
-    border:1px solid black;
-    border-radius: 10px;
-    width:300px;
-    text-align:center;
-    margin:0 auto;
+  border:1px solid black;
+  border-radius: 10px;
+  width:300px;
+  text-align:center;
+  margin:0 auto;
 }
 
 .section_k-inner__l-column p{
@@ -837,18 +1030,18 @@ button:a{
 }
 
 .section_k-inner__l-column__info{
-    text-align:left;
-    margin:0 auto;
-    display:inline-block;
-    padding-right:auto;
+  text-align:left;
+  margin:0 auto;
+  display:inline-block;
+  padding-right:auto;
 }
 
 .section_k-inner__l-column__info p{
-    font-style:12px;
+  font-style:12px;
 }
 
 .section_k-inner__l-column__info__phone-number{
-    font-size:10px;
+  font-size:10px;
 }
 .gold-number .contact-tel__link{
 	color:#b99d49;
@@ -858,39 +1051,39 @@ button:a{
 .footer
 -----------------------*/
 .footer{
-    width:100%;
-    max-width:1300px;
-    display:block;
-    margin:0 auto;
+  width:100%;
+  max-width:1300px;
+  display:block;
+  margin:0 auto;
 }
 
 .footer__inner{
-    background-color:lightgray;
-    text-align:center;
-    margin:0 auto;
+  background-color:lightgray;
+  text-align:center;
+  margin:0 auto;
 }
 
 .footer__inner img{
-    width:70px;
+  width:70px;
 }
 
 .section_k-inner__r-column{
-    margin-top:30px;
-    width:300px;
+  margin-top:30px;
+  width:300px;
 }
 
 .section_k-inner__r-column__table{
-    text-align:left;
+  text-align:left;
 }
 
 .section_k-inner__l-column{
-    height:150px;
-    margin-top:30px;
+  height:150px;
+  margin-top:30px;
 }
 
 .section_k-inner__l-column__thead{
-    padding-top:20px;
-		border: doted 2px #b99d49;
+  padding-top:20px;
+	border: doted 2px #b99d49;
 }
 
 .section_k-inner__l-column_box{
@@ -898,106 +1091,130 @@ button:a{
 }
 
 .contact-tel__link{
-    font-size:20px;
-    color:darkgreen;
+  font-size:20px;
+  color:darkgreen;
 }
 
+/*----------------------------------
+メディアクエーリー スマホ
+-----------------------------------*/
 @media screen and (max-width:768px){
-    html{
-        font-size:12px;
-    }
+html{
+  font-size:12px;
+}
 
-    h1{
-        font-size:1.2rem;
-    }
+h1{
+  font-size:1.2rem;
+}
+/*-----------------------------------
+section_a スマホ
+-----------------------------------*/
+.section_a{
+  width:100%;
+  margin:0 auto;
+}
 
-    .section_a{
-        width:100%;
-        margin:0 auto;
+.section_a__inner{
+  flex-direction:column;
+}
 
-    }
+.section_a__r-column{
+  margin:0 auto;
+  text-align:center;
+  display:block;
+}
 
-    .section_a__inner{
-        flex-direction:column;
-    }
+.main-logo img{
+  /* text-align:center;
+  margin:0 auto; */
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
 
-    .section_a__r-column{
-        margin:0 auto;
-        text-align:center;
-        display:block;
-    }
+/*-------------------------------
+section_b スマホ
+---------------------------------*/
+.section_b{
+  width:100%;
+  margin:0 auto;
+  display:block;
+}
 
-    .main-logo img{
-        /* text-align:center;
-        margin:0 auto; */
-        display:block;
-        margin-left:auto;
-        margin-right:auto;
-    }
+.section_b__inner{
+  width:70%;
+  flex-direction:column;
+  display:block;
+  max-width:800px;
+}
 
-    .section_b{
-        width:100%;
-        margin:0 auto;
-        display:block;
-    }
+.section_b__r_column{
+  text-align:center;
+  margin:0 auto;
+  display:block;
+  padding-top:30px;
+}
 
-    .section_b__inner{
-        width:70%;
-        flex-direction:column;
-        display:block;
-        max-width:800px;
-    }
+.section_b__sub-title{
+  font-size: 15px;
+  text-align:center;
+  margin:0 auto;
+  display:inline-block;
+}
 
-    .section_b__r_column{
-        text-align:center;
-        margin:0 auto;
-        display:block;
-        padding-top:30px;
-    }
+.section_b__l-column{
+  text-align:center;
+  margin:0 auto;
+}
 
+/*------------------------
+section_c スマホ
+----------------------------*/
+.section_c{
+  width:100%;
+  margin:0 auto;
+}
 
-    .section_b__sub-title{
-        font-size: 15px;
-        text-align:center;
-        margin:0 auto;
+.section_c__inner img{
+  text-align:center;
+  margin-left:180px;;
+}
 
-    }
+.trashcoffee{
+  text-align:center;
+  margin:0 auto;
+}
+/*------------------------
+section_d スマホ
+----------------------------*/
+.section_d{
+  width:100%;
+  margin:0 auto;
+}
 
-    .section_c{
-        width:100%;
-        margin:0 auto;
-    }
+.section_d__inner__flex{
+  flex-direction:column;
+  text-align:center;
+  padding-bottom:60px;
+}
 
-    .section_c__inner img{
-        text-align:center;
-        margin-left:180px;;
-    }
-
-    .trashcoffee{
-        text-align:center;
-        margin:0 auto;
-    }
-
-    .section_d{
-        width:100%;
-        margin:0 auto;
-    }
-    .section_d__inner__flex{
-        flex-direction:column;
-        text-align:center;
-        padding-bottom:60px;
-    }
-    .section_d__inner__text{
-        padding-top:30px;
-        font-size:20px;
-    }
-    .section_e{
-        width:100%;
-        margin:0 auto;
-    }
-    .section_f{
-        width:100%;
-        margin:0 auto;
-    }
+.section_d__inner__text{
+  padding-top:30px;
+  font-size:20px;
+}
+/*------------------------
+section_e スマホ
+----------------------------*/
+.section_e{
+  width:100%;
+  margin:0 auto;
+}
+/*------------------------
+section_f スマホ
+----------------------------*/
+.section_f{
+  width:100%;
+  margin:0 auto;
+}
 
 }
