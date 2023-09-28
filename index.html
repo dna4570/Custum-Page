@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>L-sunsui Sound-Block 【Lーsunsui】</title>
-  <meta name="description" content="ホームページ制作を意識したコーディング学習を経て、若きコーダーのスキル充実！-produce by l-SUNSUI">
-  <meta content="L-sunsui 倉庫カフェ・【L-sunsui】">
+  <title>L-sunsui Sound-Block・【L-sunsui】</title>
+  <meta name="description" content="ホームページ制作を意識したコーディング学習-produce by l-SUNSUI">
+  <meta content="L-sunsui ・【L-sunsui】">
   <link rel="stylesheet" href="./css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
@@ -16,11 +16,9 @@
 <header class="header_a">
   <div class="header_a__container">
     <!--ハンバーガーメニュー-->
-      <!-- <div class="openbtn"><span></span><span></span><span></span></div> -->
-			<img src="./images/PixelArt.jpg" style="width:50px;">
-			<div class="page_title">
-        <h1>コーダーズ学習記録</h1>
-      </div>
+    <!-- <div class="openbtn"><span></span><span></span><span></span></div> -->
+		<img src="./images/PixelArt.jpg" style="width:50px;">
+			<div class="page_title"><h1>コーダーズ学習記録</h1></div>
         <nav>
           <div class="g-nav">
             <ul class="g-nav-flex">
@@ -31,27 +29,45 @@
                 <a linkrel="#">CODING</a>
               </li>
               <li>
-                <a linkrel="#">Studio</a>
+                <a linkrel="#">STUDIO</a>
               </li>
               <li>
-                <a linkrel="#">Access</a>
+                <a linkrel="#">ACCESS</a>
               </li>
               <li>
-                <a linkrel="#">Contact</a>
+                <a linkrel="#">CONTACT</a>
               </li>
             </ul>
           </div>
         </nav>
 
-    <ul class="header__gnav">
-      <li class="gnav__item gnav__item-information"><a href="information/">お知らせ</a></li>
-      <li class="gnav__item gnav__item-about"><a href="information/">お知らせ</a></li>
-      <li class="gnav__item gnav__item-case"><a href="information/">お知らせ</a></li>
-    </ul>
+            <div id="navArea">
+              <nav>
+                <div class="inner">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Detail</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+
+              <div class="toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div id="mask"></div>
+            </div>
+
+
+
+      </div>
   </div>
 </header>
 <!-----------------
-section_a
+section_a HEROイメージ
 -------------------->
 <section class="section_a">
   <div class="section_a__inner">
@@ -84,49 +100,18 @@ section_b HEROイメージ
 				LIKE A JAPANESE MISO SOURP
 			</p>
     </div>
-  </div>
-  <div class="section_b__inner">
-    <div class="section_b__r_column">
-      <img src="./images/333_f.png">
-    </div>
-    <div class="section_b__text">
-      <p class="section_b__sub-title">
-				HPコーダー・コーディング「L-sunsui」ページです。<br>
-        CSSを使った新鮮で安心できるソースコードを使用し、
-        上質なコードスタイルをご用意しております。
-        心地のいい素敵な空間のなかで
-        楽しいひとときをお過ごしください。
-			</p>
-      <p class="section_b__english">
-				LIKE A JAPANESE MISO SOURP
-			</p>
-    </div>
-  </div>
-  <div class="section_b__inner">
-    <div class="section_b__r_column">
-      <img src="./images/333_f.png">
-    </div>
-    <div class="section_b__text">
-      <p class="section_b__sub-title">
-				HPコーダー・コーディング「L-sunsui」ページです。<br>
-        CSSを使った新鮮で安心できるソースコードを使用し、
-        上質なコードスタイルをご用意しております。
-        心地のいい素敵な空間のなかで
-        楽しいひとときをお過ごしください。
-			</p>
-      <p class="section_b__english">
-				LIKE A JAPANESE MISO SOURP
-			</p>
+    <div class="section_b__l-column">
+      <img src="../images/222.png">
     </div>
   </div>
 </section>
 
-<!------------------
+<!----------------------------------
 section_d  3カード
-------------------->
+----------------------------------->
 <section class="section_d">
   <div class="section_d__inner">
-    <h1>L-sunsuiが集中営業をはじめました!</h1>
+    <h2>L -sunsuiがLIFE-WORKをはじめました!</h2>
       <div class="section_d__inner__flex">
         <div class="section_d-card__c-column">
           <img src="./images/banner.jpg" style="width:200px;">
@@ -139,17 +124,20 @@ section_d  3カード
         </div>
       </div>
         <p class="section_d__inner__text">HTMLからCSSまで様々なDOMメニューをご利用しております。</p>
-    <div class="button__area">
-      <a><button>ALL MENU (PDF)</></button></a>
+    <div class="container2">
+      <a href="">
+        <button class="button">詳しく見る</button>
+      </a>
     </div>
   </div>
 </section>
-<!------------------
-section_e お知らせ
-------------------->
+<!--------------------------------
+section_e
+---------------------------------->
 <section class="section_e">
   <div class="section_e__inner">
-    <h2>JavascriptやjQueryのReactにもご利用いただけます。</h2>
+    <h2 class="font_title">Javascriptや<br>jQuery、<br>
+      Reactも<br>ご利用いただけます。</h2>
       <div class="section_e__inner__box">
         <div class="section_e__inner__r-column">
           <p>
@@ -159,8 +147,8 @@ section_e お知らせ
               も可能です。
               詳しくはお問い合わせください。
           </p>
-          <div class="container">
-            <a href=""><button>詳しく見る</button></a>
+          <div class="container2">
+            <a><button>STUDIO PAGE</button></a>
           </div>
         </div>
         <div class="section_e__inner__l-column">
@@ -169,10 +157,38 @@ section_e お知らせ
       </div>
   </div>
 </section>
-<!--------------------
-section_tab
----------------------->
-<section class="section_tab">
+<!-------------------------
+section_f SCRNE シーン
+-------------------------->
+<section class="section_f">
+  <div class="section_f__inner">
+    <div class="text-column">
+      <h2>SCENE</h2>
+      <p class="sub-title">シーン</p>
+    </div>
+  </div>
+</section>
+<!-------------------------
+section_f
+---------------------------->
+<section class="section_f_2">
+  <div class="section_f_2__inner">
+    <div class="container">
+      <div class="item1" id="gi1">Item1</div>
+      <div class="item2" id="gi2">Item2</div>
+      <div class="item3" id="gi3">Item3</div>
+      <div class="item4" id="gi4">Item4</div>
+      <div class="item5" id="gi5">Item5</div>
+      <div class="item6" id="gi6">Item6</div>
+      <div class="item7" id="gi7">Item7</div>
+      <div class="item8" id="gi8">Item8</div>
+    </div>
+  </div>
+</section>
+
+<!-------------------------
+section_tab タブ
+---------------------------->
 <ul class="menu">
   <li class="item active">JavaScript</li>
   <li class="item">HTML&CSS</li>
@@ -189,35 +205,7 @@ section_tab
     WordPress開発に必要なスキルをゼロから実務レベルまで学ぶことができます。WordPress開発に必要なWebの基礎知識やPHPついても豊富なレッスンがあるので、これ１本でWordPressを網羅的に学習できます。
   </div>
 </div>
-</section>
-<!------------------
-section_f
-------------------->
-<section class="section_f">
-  <div class="section_f__inner">
-    <div class="text-column">
-      <h2>SCENE</h2>
-      <p class="sub-title">シーン</p>
-    </div>
-  </div>
-</section>
-<!------------------
-section_f グリッド
-------------------->
-<section class="section_f_2">
-  <div class="section_f_2__inner">
-    <div class="container">
-      <div class="item1" id="gi1">Item1</div>
-      <div class="item2" id="gi2">Item2</div>
-      <div class="item3" id="gi3">Item3</div>
-      <div class="item4" id="gi4">Item4</div>
-      <div class="item5" id="gi5">Item5</div>
-      <div class="item6" id="gi6">Item6</div>
-      <div class="item7" id="gi7">Item7</div>
-      <div class="item8" id="gi8">Item8</div>
-    </div>
-  </div>
-</section>
+
 <!-------------------------
 section_i Access
 ---------------------------->
@@ -228,9 +216,11 @@ section_i Access
 		</div>
 	</div>
 </section>
-<!--------------------------
- section_h
------------------------------>
+
+<!-------------------------
+section_h 地図　MAP
+---------------------------->
+
 <section class="section_h">
   <div class="section_h__inner">
     <div class="access_map" >
@@ -238,9 +228,11 @@ section_i Access
 		</div>
   </div>
 </section>
-<!--------------------------
-  section_j_plus
------------------------------>
+
+<!-------------------------
+section_h CONTACT お問合せフォーム
+---------------------------->
+
 <section class="section_j_plus">
   <div class="section_j_plus__inner">
     <div class="text-column">
@@ -249,56 +241,45 @@ section_i Access
     </div>
   </div>
 </section>
-<!--------------------------
-  お問合せフォーム
------------------------------>
+
+<!-------------------------
+section_h CONTACT お問合せフォーム
+---------------------------->
+
 <section class="section_j" id="frm">
-	<h1>お問合せフォーム</h1>
-	<p class="err"></p>
-	<table>
-		<tr>
-			<th>お名前<span>必須</span></th>
-			<td><input type="text" name="name"></td>
-		</tr>
-		<tr>
-			<th>性別<span>必須</span></th>
-			<td>
-				<input type="radio" name="gender" value="男性"> 男性　
-				<input type="radio" name="gender" value="女性"> 女性
-			</td>
-		</tr>
-		<tr>
-			<th>電話番号<span>必須</span></th>
-			<td><input type="text" name="tel"></td>
-		</tr>
-		<tr>
-			<th>メールアドレス</th>
-			<td><input type="text" name="mail"></td>
-		</tr>
-		<tr>
-			<th>内容<span>必須</span></th>
-			<td><textarea name="message" rows="5"></textarea></td>
-		</tr>
-	</table>
-	<div class="submit-button"><button>送信する</button></div>
+  <h1>お問合せフォーム</h1>
+  <p class="err"></p>
+  <table>
+    <tr>
+      <th>お名前<span>必須</span></th>
+      <td><input type="text" name="name"></td>
+    </tr>
+    <tr>
+      <th>性別<span>必須</span></th>
+      <td>
+        <input type="radio" name="gender" value="男性"> 男性　
+        <input type="radio" name="gender" value="女性"> 女性
+      </td>
+    </tr>
+    <tr>
+      <th>電話番号<span>必須</span></th>
+      <td><input type="text" name="tel"></td>
+    </tr>
+    <tr>
+      <th>メールアドレス</th>
+      <td><input type="text" name="mail"></td>
+    </tr>
+    <tr>
+      <th>内容<span>必須</span></th>
+      <td><textarea name="message" rows="5"></textarea></td>
+    </tr>
+  </table>
+  <div class="submit-button"><button>送信する</button></div>
 </section>
 
-<!--完了画面-->
-<section id="end">
-	<div>
-		<h1>メール送信完了</h1>
-		<p>
-			お問い合わせありがとうございます。<br>
-			担当者が確認後、折り返しご連絡致します。
-		</p>
-	</div>
-</section>
-
-<section class="section_j">
-  <div class="section_j__inner">
-    <img src="./images/undraw_reminders_re_gtyb.svg"></img>
-  </div>
-</section>
+<!-------------------------
+section_h CONTACT お問合せフォーム
+---------------------------->
 
 <section class="section_k">
   <div class="section_k__inner">
@@ -343,32 +324,35 @@ section_i Access
       </div>
     </div>
 
-    <div class="section_k-inner__l-column">
-      <table class="section_k-inner__l-column_box">
-        <thead class="section_k-inner__l-column__thead">
-          <p class="section_k-inner__l-column__font">スタッフ募集</p>
-          <p class="section_k-inner__l-column__font">「CODE L-sunsui」ではLOVEを募集しております。<br>
+      <div class="section_k-inner__l-column">
+        <table class="section_k-inner__l-column_box">
+          <thead class="section_k-inner__l-column__thead">
+            <p class="section_k-inner__l-column__font">スタッフ募集</p>
+            <p class="section_k-inner__l-column__font">「CODE L-sunsui」ではLOVEを募集しております。<br>
               経験・未経験問わず、是非お気軽にお問い合わせ下さい。</p>
-        </thead>
-          <hr>
-          <div class="section_k-inner__l-column__info">
-            <p class="section_k-inner__l-column__info__phone-number">046-XXXX-XXXX<br>
+          </thead>
+            <hr>
+            <div class="section_k-inner__l-column__info">
+              <p class="section_k-inner__l-column__info__phone-number">046-XXXX-XXXX<br>
                 contact@L-sunsui.net
-						</p>
-          </div>
-      </table>
+							</p>
+            </div>
+        </table>
+      </div>
+		</div>
+<!-------------------------
+footer__inner フッター
+---------------------------->
+    <div class="footer__inner">
+      <img src="./images/PixelArt.jpg">
+        <p><small>Copyright L-sunsui All right reserved</small></p>
     </div>
-	</div>
-<!-- </section> -->
-
-<!-- <footer class="footer"> -->
-  <div class="footer__inner">
-    <img src="./images/PixelArt.jpg">
-      <p><small>Copyright L-sunsui All right reserved</small></p>
-  </div>
-</section>
-
-<script src="js/main.js"></script>
-<script src="js/tab.js"></script>
+  </section>
+  <a id="go_top" href="#">上に戻る</a>
+  <script src="js/main.js/" defer></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/tab.js" defer></script>
+  <script src="js/form.js" defer></script>
+  <script src="js/gototop.js" defer></script>
 </body>
 </html>
