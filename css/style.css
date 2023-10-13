@@ -14,134 +14,107 @@ html{
   scroll-behavior:smooth;
 }
 
-body{
-padding: 0;
-margin:0;
-box-sizing:border-box;
-/* padding:1rem; */
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
+ul{
+  list-style:none;
+}
+
+a {
+  color:#eee;
+  cursor:pointer;
+}
 h1{
-    font-size:21px;
-    font-family:suns-selif;
+  font-size:21px;
+  font-family:suns-selif;
 }
 
 h2{
-    font-size:18px;
+  font-size:18px;
 }
 
 h3 {
-  font-size: 1.2rem;
-  font-family: 'Hiragino Mincho Pro';
+font-size: 1.2rem;
+font-family: 'Hiragino Mincho Pro';
 }
 
 p{
-    margin-top:0;
-    margin-bottom:0;
+  margin-top:0;
+  margin-bottom:0;
 }
 
-img{
-    vertical-align:bottom;
+img {
+  object-fit:cover;
+}
+
+header{
+  padding: 0;
+  margin:0;
+  background:#068fff;
+  box-sizing:border-box;
+  padding:8px 40px 8px 64px;
+}
+
+.headers{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+}
+
+.logo{
+  font-size: 32px;
+  font-weight:bold;
+  flex:1;
+}
+
+.menus{
+  padding:0 24px;
+  display:inline-flex;
+}
+
+.menu a{
+  font-size:16px;
+  padding:0 8px;
+}
+
+.search {
+  width:240px;
+  height: 30px;
+  display:flex;
+  border-radius:4px;
+  background:#ccc;
+}
+
+.search input{
+  width:210px;
+  height:100%;
+  border:none;
+  outline:none;
+  padding:4px;
+  border-radius:4px 0 0 4px;
+}
+
+.search-icon{
+  width:30px;
+  height:100%;
+  display:grid;
+  place-items:center;
+  cursor:pointer;
 }
 
 /*--------------------------
 .header_a ヘッダー
 -----------------------*/
-.header_a{
-  width:100%;
-  max-width:1300px;
-  margin:0 auto;
-}
-
-.header_a__container{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:space-around;
-	margin:1rem;
-}
-
 .page_title{
 	font-size:30px;
 	font-family:Poppimns;
 	color:#1e3450;
 	font-weight:bold;
-}
-
-.header__gnav{
-  display:flex;
-  justify-content:column;
-  display:none;
-}
-
-.g-nav{
-  display:flex;
-  flex-wrap:wrap;
-}
-
-.g-nav-flex li{
-	margin-left:20px;
-}
-
-/*--------------------------
-.ハンバーガーメニュー
------------------------*/
-.openbtn{
-  position:relative;
-  background: #57a2c7;
-  cursor:pointer;
-  width:50px;
-  height:50px;
-  border-radius:5px;
-}
-
-/*ボタン内側*/
-.openbtn span{
-  display:inline-block;
-  transition:all.4s;
-  position:absolute;
-  left:14px;
-  height:3px;
-  border-radius:2px;
-  background:#fff;
-  width:45px;
-}
-
-.openbtn span:nth-of-type(1){
-  top:15px;
-}
-
-.openbtn span:nth-of-type(2) {
-  top:23px;
-}
-
-.openbtn span:nth-of-type(3) {
-  top:31px;
-}
-
-/*activeクラス付与*/
-.openbtn.active sapan:nth-of-type(1) {
-  top:18px;
-  left:18px;
-  transform:trandlateY(6px) rotate(-45deg);
-  width:30%;
-}
-
-.openbtn.active span:nth-of-type(2) {
-  opacity: 0;
-}
-
-.openbtn.active span:nth-of-type(3) {
-  top:30px;
-  left:18px;
-  transform:translateY(-6px)
-  rotate(45deg);
-  width:30px;
-}
-
-.g-nav-flex {
-  display: flex;
-  padding-left: 2rem;
-  list-style: none;
 }
 
 /*--------------------------
@@ -1198,7 +1171,7 @@ button:hover {
 /*----------------------------------
 メディアクエーリー スマホ
 -----------------------------------*/
-@media screen and (max-width:768px){
+@media  (max-width:1024px){
 html{
   font-size:12px;
 }
@@ -1206,6 +1179,19 @@ html{
 h1{
   font-size:1.2rem;
 }
+/*-----------------------------------
+header スマホSP
+-----------------------------------*/
+  header{
+    padding:8px 40px 8px 8px;
+  }
+  .logo{
+    display: none;
+  }
+  .menus{
+    flex:4;
+  }
+
 /*-----------------------------------
 section_a スマホSP
 -----------------------------------*/
