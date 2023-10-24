@@ -1080,16 +1080,20 @@ fadeInフェードイン
   transition: all 1.5s;
 }
 .blockIn{
-  opacity:1.0;
+  opacity:1;
 }
 .slider-right{
   transform: translateX(-200px);
-  transition: all 0.5s ease-in ;
+  transition: all 0.5s ease-in;
 }
 
 .slider-left {
   transform: translateX(-200px);
   transition: all 0.5s ease-in;
+}
+
+.blockIn {
+  transform:translateX(0px);
 }
 
 /*-----------------------------------
