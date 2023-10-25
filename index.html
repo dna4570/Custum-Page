@@ -10,8 +10,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+
 <body>
 <!------------------------------------------
 header_a ヘッダー
@@ -38,45 +40,48 @@ header_a ヘッダー
   </ul>
 </div>
 </header>
-<!-----------------
-section_a HEROイメージ
--------------------->
+<!-- section_a HEROイメージ -->
 <section class="section_a scroll-block">
-  <div class="section_a__inner">
-    <div class="main-logo">
-      <!-- <img src="./images/coffee.jpg"> -->
-    </div>
-    <div class="section_a__r-column">
-      <img class="section_a__r-column__img" src="./images/undraw_growth_curve_re_t5s7.svg" >
-    </div>
-  </div>
 
-<!-- Slider main container -->
-<div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">
-      Slide 1<img src="images/reindeer-1030864_1920.png" alt="">
+    <div class="key-visual">
+      <div class="key-visual_ttl">
+        <h2>プログラミングで<br>
+          人生の安定を手に入れよう</h2>
+        <p class="key-visual_logo"><img src="images/PixelArt.jpg" alt="lsunsui"></p>
+        <p>日本の和のエンジニア学習教室<br>
+          sunsui[サンスイ]</p>
+      </div><!--key_visual_ttl-->
+    </div><!--./key-visual-->
+
+</section>
+
+
+<section>
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        Slide 1<img src="images/0-11-header.png" alt="">
+        </div>
+      <div class="swiper-slide">
+        Slide 2<img src="images/0-11-header.png" alt="">
       </div>
-    <div class="swiper-slide">
-      Slide 2<img src="images/reindeer-1030864_1920.png" alt="">
+      <div class="swiper-slide">
+        Slide 3<img src="images/0-11-header.png" alt="">
+      </div>
     </div>
-    <div class="swiper-slide">
-      Slide 3<img src="images/reindeer-1030864_1920.png" alt="">
-    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
   </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
-
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div>
-
 </section>
 
 <!--------------------
@@ -84,44 +89,55 @@ section_b HEROイメージ
 ---------------------->
 <section class="section_b scroll-block">
   <div class="section_b__inner">
-    <p>
-			HPコーダー・コーディング「L-sunsui」ページです。<br>
-        CSSを使った新鮮で安心できるソースコードを使用し、
-        上質なコードスタイルをご用意しております。
-        心地のいい素敵な空間のなかで
+    <div class="left-box">
+      <h2>HPコーダー</h2>
+    </div>
+    <div class="right-box">
+      <p>
+        コーディング「L-sunsui」ページです。<br>
+        CSSを使った新鮮で安心できるソースコードを使用し、<br>
+        上質なコードスタイルをご用意しております。<br>
+        心地のいい素敵な空間のなかで<br>
         楽しいひとときをお過ごしください。
-		</p>
-  </div>
-</section>
-
-<!----------------------------------
-section_d  3カード
------------------------------------>
-<section class="section_d scroll-block slide-right">
-  <div class="section_d__inner">
-    <h2>L -sunsuiがLIFE-WORKをはじめました!</h2>
-      <div class="section_d__inner__flex">
-        <div class="section_d-card__c-column">
-          <img src="./images/banner.jpg" style="width:200px;">
-        </div>
-        <div class="section_d-card__c-column">
-          <img src="./images/banner.jpg">
-        </div>
-        <div class="section_d-card__l-column">
-          <img src="./images/banner.jpg">
-        </div>
-      </div>
-    <div class="container2">
-      <p>HTMLからCSSまで<br>様々なDOMメニューをご利用しております。</p>
-      <a href="">
-        <button class="button">詳しく見る</button>
-      </a>
+      </p>
     </div>
   </div>
 </section>
-<!--------------------------------
+
+<!---------------------
+section_d  3カード
+---------------------->
+<section class="section_d scroll-block slide-right">
+  <div class="section_d__inner">
+  <h2>L -sunsuiがLIFE-WORKをはじめました!</h2>
+    <div class="section_d__inner-flex">
+      <div class="section_d-card__r-column">
+        <img src="./images/IMG_7288.JPG" style="width:200px;">
+        <p>Hello</p>
+        <button class="btn">Hello</button>
+      </div>
+      <div class="section_d-card__c-column">
+        <img src="./images/IMG_7288.JPG">
+        <p>Hello</p>
+        <button class="btn">Hello</button>
+      </div>
+      <div class="section_d-card__l-column">
+        <img src="./images/IMG_7288.JPG">
+          <p>Hello</p>
+          <button class="btn">Hoo</button>
+        </div>
+      </div>
+    </div>
+  <div class="container2">
+    <p>HTMLからCSSまで<br>様々なDOMメニューをご利用しております。</p>
+    <a href="">
+      <button class="button">詳しく見る</button>
+    </a>
+  </div>
+</section>
+<!--------------------
 section_e
----------------------------------->
+--------------------->
 <section class="section_e scroll-block slide-right">
   <div class="section_e__inner">
     <h2 class="font_title">Javascriptや<br>jQuery、<br>
@@ -136,9 +152,9 @@ section_e
             詳しくはお問い合わせください。
           </p>
         </div>
-        <div class="container2">
-          <button id="modal-btn" class="modal demo">モーダルウィンドウを開く</button>
-        </div>
+        <!-- <div class="container2">
+          <button  class="modal demo">モーダルウィンドウを開く</button>
+        </div> -->
         <!-- <div class="modal-overlay">
           <div class="modal-window">
             <button id="close" aria-label="閉じる"></button>
@@ -150,6 +166,7 @@ section_e
       </div>
   </div>
 </section>
+
 <!-------------------------
 section_f SCENE シーン
 -------------------------->
@@ -331,5 +348,6 @@ footer__inner フッター
   <script src="js/gototop.js" defer></script>
   <script src="js/swiper.js"></script>
   <script src="js/fadein.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
