@@ -3,22 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>L-sunsui Sound-Block・【L-sunsui】</title>
+  <title>【L-sunsui】・【Lo-fi Beat Make Sound】</title>
   <meta name="description" content="ホームページ制作を意識したコーディング学習-produce by l-SUNSUI">
   <meta content="L-sunsui ・【L-sunsui】">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three":"https://unpkg.com/three@0.152.2/build/three.module.js"
+      }
+    }
+  </script>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"
+  integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg=="
+  crossorigin="anonymous"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@next/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+  </head>
 <body>
-<!------------------------------------------
+
+<!--------------------------------------
 header_a ヘッダー
-------------------------------------------->
-<header class="header_a scroll-block">
+---------------------------------------->
+<header class="header_a">
   <ul class="headers">
     <li class="logo"><a href="">Code Tips</a></li>
     <li class="hamberger">
@@ -38,139 +68,192 @@ header_a ヘッダー
         </label>
       </li>
   </ul>
-</div>
+
+  <!-- <div id="nav-wrapper" class="nav-wrapper">
+  <div class="humberger" id="js-humburger">
+    <span class="humberger__line" hamburger__line--1"></span>
+    <span class="humberger__line" hamburger__line--2"></span>
+    <span class="humberger__line" hamburger__line--3"></span>
+  </div>
+  <nav class="sp-nav">
+    <ul>
+      <li>メニュー1</li>
+      <li>メニュー1</li>
+      <li>メニュー1</li>
+    </ul>
+  </nav>
+  <div class="black-bg" id="js-black-bg"></div>
+  </div> -->
+
 </header>
-<!-- section_a HEROイメージ -->
-<section class="section_a scroll-block">
+<!-----------------
+about HEROイメージ
+-------------------->
+<section class="section_a">
+  <div class="section_a__inner">
+  <h1 class="bg-ptimary text-white display-4">React</h1>
+  <div class="container mt-4">
+    <div id="root">wait...</div>
+  </div>
+  <script type="text/babel">
+    const dom = document.querySelector('#root');
+    const message = "Reactコンポーネントのページです。";
 
-    <div class="key-visual">
-      <div class="key-visual_ttl">
-        <h2>プログラミングで<br>
-          人生の安定を手に入れよう</h2>
-        <p class="key-visual_logo"><img src="images/PixelArt.jpg" alt="lsunsui"></p>
-        <p>日本の和のエンジニア学習教室<br>
-          sunsui[サンスイ]</p>
-      </div><!--key_visual_ttl-->
-    </div><!--./key-visual-->
-
-</section>
-
-
-<section>
-  <!-- Slider main container -->
-  <div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">
-        Slide 1<img src="images/0-11-header.png" alt="">
+    function Welcome(props) {
+      return (
+        <div className={props.alert}>
+          <p className={props.fontSize}>こんにちは、{props.name}さん！</p>
         </div>
-      <div class="swiper-slide">
-        Slide 2<img src="images/0-11-header.png" alt="">
-      </div>
-      <div class="swiper-slide">
-        Slide 3<img src="images/0-11-header.png" alt="">
-      </div>
+      );
+    }
+    //表示するJSX
+    const el = (
+    <div>
+      <h5 className="mb-4">{message}</h5>
+      <Welcome name="太郎" fontSize="h2" alert="alert alert-primary" />
+      <Welcome name="花子" fontSize="h5" alert="alert alert-dark" />
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
+  );
 
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
+    ReactDOM.render(el,dom)
+  </script>
   </div>
 </section>
+<!--------------------
+Swiperイメージ
+---------------------->
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide ４</div>
+  </div>
+  <!-- 必要に応じてページネーション -->
+  <div class="swiper-pagination"></div>
+  <!-- 必要に応じてナビボタン -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
 
 <!--------------------
 section_b HEROイメージ
 ---------------------->
-<section class="section_b scroll-block">
+<section class="section_b">
   <div class="section_b__inner">
-    <div class="left-box">
-      <h2>HPコーダー</h2>
+    <div class="section_b__r_column">
+      <!-- <img src="./images/333_f.png"> -->
+      <canvas id="myCanvas"></canvas>
     </div>
-    <div class="right-box">
-      <p>
-        コーディング「L-sunsui」ページです。<br>
-        CSSを使った新鮮で安心できるソースコードを使用し、<br>
-        上質なコードスタイルをご用意しております。<br>
-        心地のいい素敵な空間のなかで<br>
+    <div class="section_b__text">
+      <p class="section_b__sub-title">
+				HPコーダー・コーディング「L-sunsui」ページです。<br>
+        CSSを使った新鮮で安心できるソースコードを使用し、
+        上質なコードスタイルをご用意しております。
+        心地のいい素敵な空間のなかで
         楽しいひとときをお過ごしください。
-      </p>
+			</p>
+      <p class="section_b__english">
+				LIKE A JAPANESE MISO SOURP
+			</p>
+    </div>
+
+  </div>
+</section>
+
+<!----------------------------------
+section_d  3カード＆"モーダル"
+----------------------------------->
+<section class="section_d">
+  <div class="section_d__inner">
+    <h2>コーダーがREACTをはじめました!</h2>
+      <div class="section_d__inner__flex">
+        <div class="section_d-card__c-column">
+          <img src="./images/banner.jpg" style="width:200px;">
+        </div>
+        <div class="section_d-card__c-column">
+          <img src="./images/banner.jpg">
+        </div>
+        <div class="section_d-card__l-column">
+          <img src="./images/banner.jpg">
+        </div>
+      </div>
+        <p class="section_d__inner__text">HTMLからCSSまで様々なDOMメニューをご利用しております。</p>
+    <div class="container2"><!DOCTYPE html>
+      <html lang="en">
+        <head>
+          <meta charset="utf-8" />
+          <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="theme-color" content="#000000" />
+          <meta
+            name="description"
+            content="Web site created using create-react-app"
+          />
+          <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+          <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+          <title>React App</title>
+        </head>
+        <body>
+          <noscript>You need to enable JavaScript to run this app.</noscript>
+          <div id="root"></div>
+
+        </body>
+      </html>
+
+        <button class="button" id="openModal">Open modal1</button>
+
+        <!--モーダルエリアここから-->
+        <section id="modalArea" class="modalArea">
+          <div id="modalBg" class="modalWrapper">
+            <div class="modalContents">
+              <h1>Here are modal without</h1>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum eaque doloremque fugit dolor quae non tenetur ipsam, molestias, nostrum cupiditate, similique aperiam eum commodi necessitatibus. Cumque adipisci eaque ipsa ad.</p>
+            </div>
+            <div id="closeModal" class="classModal">
+              x
+            </div>
+          </div>
+        </section>
+      <!--モーダルエリアここまで-->
     </div>
   </div>
 </section>
 
-<!---------------------
-section_d  3カード
----------------------->
-<section class="section_d scroll-block slide-right">
-  <div class="section_d__inner">
-  <h2>L -sunsuiがLIFE-WORKをはじめました!</h2>
-    <div class="section_d__inner-flex">
-      <div class="section_d-card__r-column">
-        <img src="./images/IMG_7288.JPG" style="width:200px;">
-        <p>Hello</p>
-        <button class="btn">Hello</button>
-      </div>
-      <div class="section_d-card__c-column">
-        <img src="./images/IMG_7288.JPG">
-        <p>Hello</p>
-        <button class="btn">Hello</button>
-      </div>
-      <div class="section_d-card__l-column">
-        <img src="./images/IMG_7288.JPG">
-          <p>Hello</p>
-          <button class="btn">Hoo</button>
-        </div>
-      </div>
-    </div>
-  <div class="container2">
-    <p>HTMLからCSSまで<br>様々なDOMメニューをご利用しております。</p>
-    <a href="">
-      <button class="button">詳しく見る</button>
-    </a>
-  </div>
-</section>
-<!--------------------
+<!--------------------------------
 section_e
---------------------->
-<section class="section_e scroll-block slide-right">
+---------------------------------->
+<section class="section_e">
   <div class="section_e__inner">
-    <h2 class="font_title">Javascriptや<br>jQuery、<br>
-      Reactも<br>ご利用いただけます。</h2>
+    <h2 class="font_title">JavascriptやjQuery、
+      Reactも学習し続けます。</h2>
       <div class="section_e__inner__box">
         <div class="section_e__inner__r-column">
           <p>
-						スチル＆ムーディーの撮影、動画配
-            信など様々な撮影にご利用いただ
-            けます。また、パーティーでのご利用
-            も可能です。
-            詳しくはお問い合わせください。
+						HTML＆CSSの学習、Javascript
+              など様々なテクノロジーに触れます。
+              是非一緒に日本を盛り上げよう。
+              詳しくはお問い合わせください。
           </p>
-        </div>
-        <!-- <div class="container2">
-          <button  class="modal demo">モーダルウィンドウを開く</button>
-        </div> -->
-        <!-- <div class="modal-overlay">
-          <div class="modal-window">
-            <button id="close" aria-label="閉じる"></button>
+          <div class="container2">
+            <a><button>STUDIO PAGE</button></a>
           </div>
-        </div> -->
-      </div>
-      <div class="section_e__inner__l-column">
-        <img src="./images/undraw_control_panel_re_y3ar 2.svg">
+        </div>
+        <div class="section_e__inner__l-column">
+          <img src="./images/undraw_control_panel_re_y3ar 2.svg">
+        </div>
       </div>
   </div>
 </section>
-
 <!-------------------------
-section_f SCENE シーン
+section_f SCRNE シーン
 -------------------------->
-<section class="section_f scroll-block">
+<section class="section_f">
   <div class="section_f__inner">
     <div class="text-column">
       <h2>SCENE</h2>
@@ -182,7 +265,7 @@ section_f SCENE シーン
 <!-------------------------
 section_tab タブ
 ---------------------------->
-<ul class="menu ">
+<ul class="menu">
   <li class="item active">JavaScript</li>
   <li class="item">HTML&CSS</li>
   <li class="item">WordPress</li>
@@ -198,11 +281,28 @@ section_tab タブ
     WordPress開発に必要なスキルをゼロから実務レベルまで学ぶことができます。WordPress開発に必要なWebの基礎知識やPHPついても豊富なレッスンがあるので、これ１本でWordPressを網羅的に学習できます。
   </div>
 </div>
+<!-------------------------
+section_i Access
+---------------------------->
+<section class="section_i" id="id4">
+	<div class="section_i__inner">
+		<div class="text-column">
+			<h3>Access</h3>
+		</div>
+	</div>
+</section>
 
 <!-------------------------
 section_i Access
 ---------------------------->
-<section class="section_i scroll-block" id="id4">
+<div style="width:400px">
+  <canvas id="mychart"></canvas>
+</div>
+
+<!-------------------------
+section_i Access
+---------------------------->
+<section class="section_i" id="id4">
 	<div class="section_i__inner">
 		<div class="text-column">
 			<h3>Access</h3>
@@ -213,7 +313,8 @@ section_i Access
 <!-------------------------
 section_h 地図 MAP
 ---------------------------->
-<section class="section_h scroll-block slide-right">
+
+<section class="section_h">
   <div class="section_h__inner">
     <div class="access_map" >
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.2189667819985!2d135.49081971553187!3d34.674422692132275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e7043a282a01%3A0x498e46683d0b8433!2z5qCq5byP5Lya56S-44Kq44O844Or44Oe44ON44O844K4!5e0!3m2!1sja!2sjp!4v1661246870831!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -236,7 +337,49 @@ section_h CONTACT お問合せフォーム
 <!-------------------------
 section_h CONTACT お問合せフォーム
 ---------------------------->
-<section class="section_j scroll-block slide-right" id="frm">
+<form action="" method="POST">
+  <table>
+      <tbody>
+          <!-- お名前 -->
+          <tr>
+              <th></th>
+              <td><div class="err-msg-name"></div></td>
+          </tr>
+          <tr>
+              <th><label for="name">お名前</label></th>
+              <td><input type="text" name="name" id="name" placeholder="ジャバ　スクリプ子"></td>
+          </tr>
+          <!-- パスワード -->
+          <tr>
+              <th></th>
+              <td class="err-msg-pass"></td>
+          </tr>
+          <tr>
+              <th><label for="password">パスワード</label></th>
+              <td><input type="password" name="password" id="password" placeholder="5文字以上の英数字"></td>
+          </tr>
+          <!-- パスワード再入力 -->
+          <tr>
+              <th></th>
+              <td class="err-msg-passre"></td>
+          </tr>
+          <tr>
+              <th><label for="pass-re">パスワード(再入力)</label></th>
+              <td><input type="password" name="pass-re" id="pass-re" placeholder="5文字以上の英数字"></td>
+          </tr>
+          <!-- 送信ボタン -->
+          <tr>
+              <th></th>
+              <td><input type="submit" class="submit"></td>
+          </tr>
+      </tbody>
+  </table>
+</form>
+
+<!-------------------------
+section_h CONTACT お問合せフォーム
+---------------------------->
+<section class="section_j" id="frm">
   <h1>お問合せフォーム</h1>
   <p class="err"></p>
   <table>
@@ -268,86 +411,95 @@ section_h CONTACT お問合せフォーム
 </section>
 
 <!-------------------------
-section_h CONTACT お問合せフォーム
----------------------------->
-<section class="section_k scroll-block slide-right">
-  <div class="section_k__inner">
-    <div class="section_k-inner__r-column">
-      <table class="section_k-inner__r-column__table">
-        <thead>
-          <tr>
-            <th>OPEN</th>
-            <th>CAFE&DINNING</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th></th>
-            <td>9:00～18:00（営業時間)</td>
-            <td>9:00～18:00（週末限定)</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <th>ADD.</th>
-            <td>定休日 土日</td>
-            <td>〒152-002 神奈川県海老名市扇町4-12-1</td>
-          </tr>
-          <tr>
-            <th></th>
-            <td>ADD 〒152-0000 神奈川県海老名市扇町4-12-1</td>
-          </tr>
-        </tfoot>
-      </table>
-      <div class="section_k2__article">
-        <div class="section_k2__article__inner">
-          <div class="under-sns">
-            <img class="sns-f" src="./images/fb_b.png">
-            <img class="sns-f" src="./images/twitter_b.png">
-            <img class="sns-f" src="./images/insta_b.png">
-          </div>
-          <div class="gold-number">
-            <p class="contact-tel__link"><a href="tel:03-XXXX-XXXX">046-228-XXXX</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-      <div class="section_k-inner__l-column">
-        <table class="section_k-inner__l-column_box">
-          <thead class="section_k-inner__l-column__thead">
-            <p class="section_k-inner__l-column__font">スタッフ募集</p>
-            <p class="section_k-inner__l-column__font">「CODE L-sunsui」ではLOVEを募集しております。<br>
-              経験・未経験問わず、是非お気軽にお問い合わせ下さい。</p>
-          </thead>
-            <hr>
-            <div class="section_k-inner__l-column__info">
-              <p class="section_k-inner__l-column__info__phone-number">046-228-XXXX<br>
-                contact@L-sunsui.net
-							</p>
-            </div>
-        </table>
-      </div>
-		</div>
-<!-------------------------
 footer__inner フッター
 ---------------------------->
-    <div class="footer__inner slide-right">
-      <img src="./images/PixelArt.jpg">
-        <p><small>Copyright L-sunsui All right reserved</small></p>
-    </div>
-  </section>
-
-  <a id="go_top" href="#">上に戻る</a>
-  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-    crossorigin="anonymous"></script>
+<div class="footer__inner">
+  <img src="./images/PixelArt.jpg">
+    <p>
+      <small>Copyright L-sunsui All right reserved</small>
+    </p>
+</div>
+<a id="go_top" href="#">上に戻る</a>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="js/main.js/" defer></script>
   <script src="js/script.js" defer></script>
   <script src="js/tab.js" defer></script>
   <script src="js/form.js" defer></script>
   <script src="js/gototop.js" defer></script>
-  <script src="js/swiper.js"></script>
-  <script src="js/fadein.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/modal.js" defer></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.152.2/build/three.module.js"
+      }
+    }
+  </script>
+  <script type="module">
+    import * as THREE from "three";
+
+    // サイズを指定
+    const width = 960;
+    const height = 540;
+
+    // レンダラーを作成
+    const renderer = new THREE.WebGLRenderer({
+      canvas: document.querySelector("#myCanvas"),
+    });
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(width, height);
+
+    // シーンを作成
+    const scene = new THREE.Scene();
+
+    // カメラを作成
+    const camera = new THREE.PerspectiveCamera(45, width / height);
+    camera.position.set(0, 0, +1000);
+
+    // 箱を作成
+    const geometry = new THREE.BoxGeometry(400, 400, 400);
+    const material = new THREE.MeshNormalMaterial();
+    const box = new THREE.Mesh(geometry, material);
+    scene.add(box);
+
+    tick();
+
+    // 毎フレーム時に実行されるループイベントです
+    function tick() {
+      box.rotation.y += 0.01;
+      renderer.render(scene, camera); // レンダリング
+
+      requestAnimationFrame(tick);
+    }
+  </script>
+
+  <!--chart.js-->
+  <script>
+    var ctx = document.getElementById('mychart');
+    var myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+        datasets: [{
+          label: 'Red',
+          data: [20, 35, 40, 30, 45, 35, 40],
+          borderColor: '#f88',
+        }, {
+          label: 'Green',
+          data: [20, 15, 30, 25, 30, 40, 35],
+          borderColor: '#484',
+        }, {
+          label: 'Blue',
+          data: [30, 25, 10, 5, 25, 30, 20],
+          borderColor: '#48f',
+        }],
+      },
+      options: {
+        y: {
+          min: 0,
+          max: 60,
+        },
+      },
+    });
+    </script>
 </body>
 </html>

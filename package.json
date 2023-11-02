@@ -8,7 +8,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^9.0.0"
+    "chart.js": "^4.4.0",
+    "node-sass": "^9.0.0",
+    "swiper": "^11.0.3"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
